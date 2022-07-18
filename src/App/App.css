@@ -1,0 +1,104 @@
+.slogan {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 102px;
+    line-height: 153px;
+}
+
+.slogan span {
+    background: -webkit-linear-gradient(right, #E3F891, #CBF231);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 152%;
+    margin-bottom: 77px;
+}
+
+.text span {
+    color: #9EB540;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+
+@media screen and (max-width: 1305px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.right {
+    flex: 1;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons * {
+    width: 249px;
+    height: 72px;
+    border: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 152%;
+    border-radius: 5px;
+}
+
+.buttons *:hover {
+    cursor: pointer;
+}
+
+.buttons *:first-child {
+    /*background: linear-gradient(265.22deg, #DEF77D 0%, #D0F344 100%);*/
+    background-color: #D0F344;
+    box-shadow: inset -8px -8px 16px #B6CC63, inset 8px 8px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    margin-right: 39px;
+}
+
+
+.buttons *:first-child:hover {
+    border: #D0F344 2px solid;
+    animation: orange-button .1s linear forwards;
+    color: #D0F344;
+}
+
+.buttons *:last-child {
+    background: none;
+    color: #8FE5FF;
+    border: #8FE5FF 2px solid;
+}
+
+.buttons *:last-child:hover {
+    animation: void-button 0.3s forwards;
+}
+
+@keyframes void-button {
+    to {
+        background: #8FE5FF;
+        color: #000424;
+    }
+}
+
+@keyframes orange-button {
+    to {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}

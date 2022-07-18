@@ -1,0 +1,27 @@
+.Rocket .trail * {
+    border-top: #8FE5FF 2px solid;
+    border-radius: 10px;
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.Rocket .trail *:last-child {
+    margin: 0;
+}
+
+.Rocket .trail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 71px;
+}
+.Rocket {
+    display: flex;
+    flex-direction: row;
+}
+
+.Rocket img {
+    margin-left: 4px;
+    width: 110px;
+    height: 71px;
+}

@@ -1,0 +1,129 @@
+.SolarSystem {
+    width: 100%;
+    height: 930px;
+    display: flex;
+    justify-content: center;
+}
+
+.sun {
+    width: 168px;
+    height: 168px;
+    background: linear-gradient(265.22deg, #DEF77D 0%, #D0F344 100%);
+    border-radius: 100%;
+}
+
+.ring1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border: #8FE5FF 3px solid;
+    border-radius: 100%;
+    animation: rotate-ring1 5s linear infinite;
+}
+
+.ring1:before {
+    position: absolute;
+    transform: translateY(-175px);
+    rotate: 50deg;
+    content: "";
+    width: 55px;
+    height: 55px;
+    background-color: #8FE5FF;
+    border-radius: 100%;
+}
+
+.ring1:after {
+    position: absolute;
+    transform: translateY(175px);
+    rotate: 50deg;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #8FE5FF;
+    border-radius: 100%;
+}
+
+.ring2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border: #8FE5FF 3px solid;
+    border-radius: 100%;
+    animation: rotate-ring2 2s linear infinite reverse;
+}
+
+.ring2:before {
+    position: absolute;
+    transform: translateX(-250px);
+    rotate: 50deg;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #8FE5FF;
+    border-radius: 100%;
+}
+
+.ring2:after {
+    position: absolute;
+    transform: translateX(250px);
+    rotate: 50deg;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #8FE5FF;
+    border-radius: 100%;
+}
+
+.ring3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 650px;
+    border: #8FE5FF 3px solid;
+    border-radius: 100%;
+    animation: rotate-ring3 5s linear infinite;
+}
+
+.ring3:before {
+    position: absolute;
+    transform: translateX(-325px);
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #8FE5FF;
+    border-radius: 100%;
+}
+
+.ring3:after {
+    position: absolute;
+    transform: translateY(-325px);
+    rotate: 50deg;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #8FE5FF;
+    border-radius: 100%;
+}
+
+@keyframes rotate-ring1 {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotate-ring2 {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotate-ring3 {
+     to {
+         rotate: 360deg;
+     }
+ }

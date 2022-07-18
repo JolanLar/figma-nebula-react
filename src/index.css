@@ -1,0 +1,25 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(246.24deg, #00094D 0%, #000424 100%);
+
+    margin: 85px 139px 0 208px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: #8FE5FF;
+
+    min-height: calc(100vh - 85px);
+    min-width: 950px;
+}
+
+@media screen and (max-width: 1305px) {
+    body {
+        margin: 85px 50px 0;
+    }
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

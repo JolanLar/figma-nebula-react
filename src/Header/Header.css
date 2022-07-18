@@ -1,0 +1,65 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .text {
+    margin: 0 0 0 7px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.logo .star {
+    border-radius: 1px;
+    width: 25px;
+    height: 25px;
+    margin-top: -1px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 484px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.nav ul .active {
+    font-weight: 700;
+    color: #D7F561;
+}
+
+.nav ul li {
+    user-select: none;
+}
+
+.nav ul li:hover {
+    cursor: pointer;
+}
+
+.nav ul li:active {
+    color: #50d6fc;
+}
+
+.nav ul li:active:before {
+    width: 80px !important;
+}
+
+.nav ul li:hover:before {
+    content: "";
+    position: absolute;
+    width: 43px;
+    border: #8FE5FF 1px solid;
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 165px;
+}
